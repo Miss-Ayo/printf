@@ -19,7 +19,7 @@ typedef struct convert
 int _printf(const char *format, ...);
 int _putchar(char c);
 int print_number(va_list);
-int parser(const char *format, conver_t func_list[], va_list arg_list);
+int get_print(const char *format, conver_t func_list[], va_list arg_list);
 
 /*Function implemented in base_specifier.c */
 int print_binary(va_list);

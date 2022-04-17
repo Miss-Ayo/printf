@@ -13,7 +13,7 @@
  */
 int _printf(const char *format, ...)
 {
-	int arg;
+	int arg = 0;
 	conver_t func_list[] = {
 		{"c", print_char},
 		{"s", print_string},
@@ -31,12 +31,12 @@ int _printf(const char *format, ...)
 	};
 	va_list arg_list;
 
-	if (format == NULL)
-		return (-1);
+	/*if (format == NULL)*/
+		/*return (-1);*/
 
 	va_start(arg_list, format);
 
-	arg = parser(format, func_list, arg_list);
+	arg = get_print(format, func_list, arg_list);
 
 	va_end(arg_list);
 

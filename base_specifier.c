@@ -80,7 +80,7 @@ int print_octal(va_list list)
 	if (rev_str == NULL)
 		return (-1);
 
-	_putchar(rev_str);
+	write_base(rev_str);
 	free(octal_rep);
 	free(rev_str);
 
@@ -127,7 +127,7 @@ int print_hex(va_list list)
 	rev_hex = rev_string(hex_rep);
 	if (rev_hex == NULL)
 		return (-1);
-	_putchar(rev_hex);
+	write_base(rev_hex);
 	free(hex_rep);
 	free(rev_hex);
 	return (len);

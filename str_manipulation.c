@@ -45,8 +45,11 @@ int rot13(va_list list)
 	{
 		for (x = 0; x <= 52; x++)
 		{
-			_putchar(u[x])
+			if (str[i] == s[x])
+			{
+				_putchar(u[x]);
 				break;
+			}
 		}
 		if (x == 53)
 			_putchar(str[i]);
