@@ -1,0 +1,34 @@
+.TH PRINTF 3 "19 April 2022" "GNU" "_printf man page"
+.SH NAME
+.B _printf
+- Recoding the printf function with some of its options
+.SH SYNOPSIS
+.nf
+.B #include "main.h"
+.SH DESCRIPTION
+The functon
+.BR _printf ()
+produces output according to a format which is described below.
+.BR _printf ()
+write its output to the stdout, the standard output stream.
+.SH USAGE
+To use _printf you have to use the following key characters preceeded by % symbol.
+.RS 3
+%d: to be used to print integers
+.RS 0
+%s: to be used to print strings
+.RS 0
+%c: to be used to print characters
+.RS 0
+%b: to print a number in binary form
+
+.SH RETURN VALUE
+The _printf() function return the number of character printed (excluding 
+the null byte used to end output to strings).
+
+.SH SEE ALSO
+.BR printf(3)
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Paul Kpadonou and Laurencia Behanzin
